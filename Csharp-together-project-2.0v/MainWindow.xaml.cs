@@ -24,5 +24,11 @@ namespace Csharp_together_project_2._0v
         {
             InitializeComponent();
         }
+
+        private void SubmitData(object sender , RoutedEventArgs e)
+        {
+            StartWindow window = new StartWindow(input_username.Text, input_password.Password.ToString());
+            window.LogIn();
+        }
     }
 }
