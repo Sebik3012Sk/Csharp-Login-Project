@@ -5,7 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Csharp_together_project_2._0v"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Login Form App" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF271E1E" Offset="1"/>
+            <GradientStop Color="#FF232121" Offset="0.997"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -15,11 +22,22 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="110" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
+
+        <TextBlock Grid.Column="1" Grid.Row="0" Text="Login Form App" FontSize="28" Foreground="Red" TextAlignment="Center" Margin="87,29,87,28"></TextBlock>
+        <TextBox Style="{DynamicResource textbox_username_round}" Grid.Column="1" Grid.Row="1" BorderBrush="Red" BorderThickness="2" Margin="15" Padding="27" Background="#FF252525" Foreground="Red" FontSize="15" FontStyle="italic" FontFamily="Helvetica"></TextBox>
+        <PasswordBox Style="{DynamicResource passwordbox_round}" Grid.Column="1" Grid.Row="2" BorderBrush="Red" BorderThickness="2" Margin="15" Padding="27" Background="#FF252525" Foreground="Red" FontSize="15" FontStyle="Italic" FontFamily="Helvetica"></PasswordBox>
+        <Button Style="{DynamicResource button_LogIn}" Grid.Column="1" Grid.Row="3" Content="Log In" FontSize="25" Margin="127,13,135,25" Foreground="White" FontFamily="Helvetica">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF380404"/>
+                    <GradientStop Color="#FFEF1515" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
