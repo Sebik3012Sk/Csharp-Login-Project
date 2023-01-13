@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <None Remove="img\icon.ico" />
+    <None Remove="img\save-icon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="img\icon.ico" />
+    <Resource Include="img\save-icon.png" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,25 @@
       Title="PageOutput">
 
     <Grid>
-        <TextBlock TextWrapping="Wrap" Text="This is a second Page" FontSize="25" Foreground="Red" Margin="277,26,188,334"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Column="0" Grid.Row="0">
+            <MenuItem Header="file" FontSize="25" Cursor="Hand">
+                <MenuItem Header="Save">
+                    <MenuItem.Icon>
+                        <Image Source="img/save-icon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                
+                <MenuItem Header="Open"></MenuItem>
+                
+                <MenuItem Header="Save as"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="edit" FontSize="25" Cursor="Hand"></MenuItem>
+            
+            <MenuItem Header="info" FontSize="25" Cursor="Hand"></MenuItem>
+        </Menu>
     </Grid>
 </Page>
