@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace Csharp_together_project_2._0v
 
         string username_input_text;
         string password_input_text;
+
+        const string path = "data_list.txt";
 
         public string UsernameInputText
         {
@@ -32,7 +35,22 @@ namespace Csharp_together_project_2._0v
         }
 
 
+        public void WriteDataToFile()
+        {
 
+            if (!File.Exists(path))
+                File.Create(path);
+            else
+            {
+                StreamWriter writer_file = new StreamWriter(path);
+
+                string data_to_file = $"Username : {username_input_text} \n Password : {password_input_text}";
+                writer_file.WriteLine(data_to_file);
+                writer_file.Close();
+            }
+
+
+        }
 
     }
 }

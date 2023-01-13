@@ -20,5 +20,5 @@ C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-t
 C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\Csharp-together-project-2.0v.genruntimeconfig.cache
 C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\ref\Csharp-together-project-2.0v.dll
 C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\App.baml
-C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\PageOutput.g.cs
-C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\PageOutput.baml
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\PageOutput\PageOutput.g.cs
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\PageOutput\PageOutput.baml
