@@ -13,12 +13,6 @@ namespace Csharp_together_project_2._0v
         string username_input_text;
         string password_input_text;
 
-        string[,] data_databese =
-        {
-            {"Sebastian Kučera" , "Mmac" },
-            { "1234" , "4321" }
-        };
-
         public string UsernameInputText
         {
             get { return username_input_text; }
@@ -38,19 +32,7 @@ namespace Csharp_together_project_2._0v
         }
 
 
-        public void LogIn()
-        {
-            if (username_input_text == data_databese[0, 0] && password_input_text == data_databese[1, 0])
-                MessageBox.Show("Your Data is Valid", "Login Form App");
-            else if (username_input_text == data_databese[0, 1] && password_input_text == data_databese[1, 1])
-                MessageBox.Show("Your Data is Valid", "Login Form App");
-            else
-                MessageBox.Show("Your data is not valid", "Login Form App");
-        }
 
-        public void runPage()
-        {
 
-        }
     }
 }
