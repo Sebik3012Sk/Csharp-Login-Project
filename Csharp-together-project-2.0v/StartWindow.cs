@@ -36,7 +36,7 @@ namespace Csharp_together_project_2._0v
 
 
         public void WriteDataToFile()
-        {
+            {
 
             if (!File.Exists(path))
                 File.Create(path);
@@ -48,6 +48,7 @@ namespace Csharp_together_project_2._0v
                 writer_file.WriteLine(data_to_file);
                 writer_file.Close();
             }
+
 
 
         }

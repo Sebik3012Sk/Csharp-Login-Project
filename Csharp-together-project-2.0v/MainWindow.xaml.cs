@@ -38,6 +38,7 @@ namespace Csharp_together_project_2._0v
 
             window.WriteDataToFile();
 
+
             string username_input_text = input_username.Text.ToString();
             string password_input_text = input_password.Password.ToString();
 
@@ -48,5 +49,7 @@ namespace Csharp_together_project_2._0v
             else
                 MessageBox.Show("Your data is not valid", "Login Form App");
         }
+
+       
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,26 @@ namespace Csharp_together_project_2._0v
         public PageOutput()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void setterHelvetica(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setHelvetica();
+        }
+
+        private void setterArial(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setArial();
+        }
+
+        private void openFile(object sender , RoutedEventArgs e)
+        {
+            FileSystem file_system = new FileSystem(text_editor);
+            file_system.ShowDialog();
         }
     }
 }
