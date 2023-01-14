@@ -35,12 +35,12 @@ namespace Csharp_together_project_2._0v
             if (FileDialog.ShowDialog() == true)
             {
                 selectedFile = FileDialog.FileName;
-                ReadFile();
+                Read();
             }
 
         }
 
-        public void ReadFile()
+        public void Read()
         {
             StreamReader reader = new StreamReader(selectedFile);
             string file_content = reader.ReadToEnd();
@@ -48,7 +48,7 @@ namespace Csharp_together_project_2._0v
             reader.Close();
         }
 
-        public void SaveFile()
+        public void Save()
         {
             try
             {
@@ -59,6 +59,23 @@ namespace Csharp_together_project_2._0v
             catch
             {
                 MessageBox.Show("Něco se pokazilo :(");
+            }
+        }
+
+        public void SaveAs()
+        {
+            OpenFileDialog FileDialog = new OpenFileDialog();
+            FileDialog.Title = "Save as";
+            FileDialog.InitialDirectory = @"C:\users\%username%\Desktop";
+            FileDialog.Filter = "Text files (*.txt)|*.txt";
+            FileDialog.FilterIndex = 2;
+            FileDialog.RestoreDirectory = true;
+            FileDialog.ValidateNames = false;
+
+            if (FileDialog.ShowDialog() == true)
+            {
+                selectedFile = FileDialog.FileName;
+                Save();
             }
         }
     }

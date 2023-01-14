@@ -17,9 +17,9 @@
 
         <Menu Grid.Column="0" Grid.Row="0" Background="#FF252525" Margin="5">
             <MenuItem Header="file" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
-                <MenuItem Click="saveFile" Header="Save" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
-                <MenuItem Header="Open" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="openFile"></MenuItem>
-                <MenuItem Header="Save as" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                <MenuItem Header="Save" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveFile"></MenuItem>
+                <MenuItem Header="Open" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="OpenFile"></MenuItem>
+                <MenuItem Header="Save as" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveAsFile"></MenuItem>
             </MenuItem>
             
             

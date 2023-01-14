@@ -49,13 +49,6 @@ namespace Csharp_together_project_2._0v
             fonts.setArial();
         }
 
-        //Open file
-
-        private void openFile(object sender, RoutedEventArgs e)
-        {
-            file_system.ShowDialog();
-        }
-
         private void setterTimesNewRoman(object sender , RoutedEventArgs e)
         {
             Fonts fonts = new Fonts(text_editor);
@@ -141,13 +134,6 @@ namespace Csharp_together_project_2._0v
             text_decorations.textUnderline();
         }
 
-        //Save file
-
-        private void saveFile(object sender, RoutedEventArgs e)
-        {
-            file_system.SaveFile();
-        }
-
         private void textBaseline(object sender , RoutedEventArgs e)
         {
             TextDecoration text_decorations = new TextDecoration(text_editor);
@@ -158,6 +144,23 @@ namespace Csharp_together_project_2._0v
         {
             TextDecoration text_decorations = new TextDecoration(text_editor);
             text_decorations.textOverLine();
+        }
+
+        //File system
+
+        private void SaveFile(object sender, RoutedEventArgs e)
+        {
+            file_system.Save();
+        }
+
+        private void OpenFile(object sender, RoutedEventArgs e)
+        {
+            file_system.ShowDialog();
+        }
+
+        private void SaveAsFile(object sender, RoutedEventArgs e)
+        {
+            file_system.SaveAs();
         }
     }
 }
