@@ -132,5 +132,17 @@ namespace Csharp_together_project_2._0v
             TextDecoration text_decorations = new TextDecoration(text_editor);
             text_decorations.textUnderline();
         }
+
+        private void textBaseline(object sender , RoutedEventArgs e)
+        {
+            TextDecoration text_decorations = new TextDecoration(text_editor);
+            text_decorations.textBaseline();
+        }
+        
+        private void textOverLine(object sender , RoutedEventArgs e)
+        {
+            TextDecoration text_decorations = new TextDecoration(text_editor);
+            text_decorations.textOverLine();
+        }
     }
 }

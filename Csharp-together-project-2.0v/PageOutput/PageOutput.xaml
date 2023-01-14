@@ -33,6 +33,8 @@
 
                 <MenuItem Header="Text Decoration" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
                     <MenuItem Header="underline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textUnderline"/>
+                    <MenuItem Header="baseline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textBaseline"/>
+                    <MenuItem Header="overline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textOverLine"/>
                 </MenuItem>
                 
             </MenuItem>

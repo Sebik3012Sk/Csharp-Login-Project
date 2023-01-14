@@ -28,5 +28,15 @@ namespace Csharp_together_project_2._0v
         {
             main_text_editor.TextDecorations = TextDecorations.Underline;
         }
+
+        public void textBaseline()
+        {
+            main_text_editor.TextDecorations = TextDecorations.Baseline;
+        }
+
+        public void textOverLine()
+        {
+            main_text_editor.TextDecorations = TextDecorations.OverLine;
+        }
     }
 }
