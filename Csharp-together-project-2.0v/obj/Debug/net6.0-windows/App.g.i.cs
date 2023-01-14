@@ -59,7 +59,7 @@ namespace Csharp_together_project_2._0v {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/Csharp-together-project-2.0v;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Csharp-together-project-2.0v;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Forms;
 
 
 namespace Csharp_together_project_2._0v
@@ -42,10 +41,7 @@ namespace Csharp_together_project_2._0v
             fonts.setArial();
         }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 9d371b127c15468ef0168c8fe99c277dc8f6d4b7
         private void openFile(object sender, RoutedEventArgs e)
         {
             FileSystem file_system = new FileSystem(text_editor);
