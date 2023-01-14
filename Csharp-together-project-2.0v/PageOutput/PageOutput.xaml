@@ -23,11 +23,23 @@
             </MenuItem>
             
             
-            <MenuItem Header="edit" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
+            <MenuItem Header="edit" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
 
-                <MenuItem Header="fonts" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
-                    
-                    <MenuItem Header="fonts family" FontSize="25" Foreground="#ffff" Padding="5" Background="#FF252525">
+                <MenuItem Header="Text Positon" FontSize="25" Background="#FF252525" Foreground="#fff" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Header="left" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveLeft"/>
+                    <MenuItem Header="right" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveRight"/>
+                    <MenuItem Header="center" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveCenter"/>
+                </MenuItem>
+
+                <MenuItem Header="Text Decoration" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Header="underline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textUnderline"/>
+                </MenuItem>
+                
+            </MenuItem>
+
+            <MenuItem Header="fonts" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
+
+                <MenuItem Header="fonts family" FontSize="25" Foreground="#ffff" Padding="5" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12">
                         <MenuItem Header="Helvetica" FontSize="25" FontFamily="Helvetica" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterHelvetica"/>
                         <MenuItem Header="Arial" FontSize="25" FontFamily="Arial" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterArial"/>
                         <MenuItem Header="Times New Roman" FontSize="25" FontFamily="Times New Roman" Foreground="#fff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterTimesNewRoman"/>
@@ -35,7 +47,7 @@
                         <MenuItem Header="Calibri" FontSize="25" FontFamily="Calibri" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterCalibri"/>
                     </MenuItem>
 
-                <MenuItem Header="font size" FontSize="25" Background="#FF252525"  Foreground="#ffff" >
+                <MenuItem Header="font size" FontSize="25" Background="#FF252525"  Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
                     <MenuItem Click="settterSizeEight" Header="8" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
                     <MenuItem Click="settterSizeSixTeen" Header="16" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
                     <MenuItem Click="settterSizeTwentyFour" Header="24" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
@@ -47,13 +59,13 @@
                     
             </MenuItem>
 
-            <MenuItem Header="Colors" FontSize="25" Background="#FF252525" Foreground="#ffff">
-                <MenuItem Header="Background" Background="#FF252525" Foreground="#ffff" FontSize="25">
-                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25"></MenuItem>
+            <MenuItem Header="Colors" FontSize="25" Background="#FF252525" Foreground="#ffff" Padding="5">
+                <MenuItem Header="Background" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
                 </MenuItem>
 
-                <MenuItem Header="Foreground" Background="#FF252525" Foreground="#ffff" FontSize="25">
-                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25"></MenuItem>
+                <MenuItem Header="Foreground" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
                 </MenuItem>
 
             </MenuItem>

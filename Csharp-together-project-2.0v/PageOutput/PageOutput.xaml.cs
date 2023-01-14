@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Forms;
+
 
 
 namespace Csharp_together_project_2._0v
@@ -105,5 +105,32 @@ namespace Csharp_together_project_2._0v
             fonts.set_sixty_four();
         }
 
+        // move text - text positions : right , left , center
+
+        private void moveRight(object sender , RoutedEventArgs e)
+        {
+            MoveText move_text = new MoveText(text_editor);
+            move_text.moveRight();
+        }
+
+        private void moveLeft(object sender , RoutedEventArgs e)
+        {
+            MoveText move_text = new MoveText(text_editor);
+            move_text.moveLeft();
+        }
+
+        private void moveCenter(object sender , RoutedEventArgs e)
+        {
+            MoveText move_text = new MoveText(text_editor);
+            move_text.moveCenter();
+        }
+
+        // text decoration : underline
+
+        private void textUnderline(object sender , RoutedEventArgs e)
+        {
+            TextDecoration text_decorations = new TextDecoration(text_editor);
+            text_decorations.textUnderline();
+        }
     }
 }
