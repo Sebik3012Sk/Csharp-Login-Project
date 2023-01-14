@@ -17,9 +17,10 @@
 
         <Menu Grid.Column="0" Grid.Row="0" Background="#FF252525" Margin="5">
             <MenuItem Header="file" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
-                <MenuItem Header="Save" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
-                <MenuItem Header="Open" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="openFile"></MenuItem>
-                <MenuItem Header="Save as" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                <MenuItem Header="Save" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveFile"></MenuItem>
+                <MenuItem Header="Open" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="OpenFile"></MenuItem>
+                <MenuItem Header="Save as" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveAsFile"></MenuItem>
+                <MenuItem Header="New File" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="newFile"></MenuItem>
             </MenuItem>
             
             
@@ -58,7 +59,19 @@
                     <MenuItem Click="setterSizeSixtyFour" Header="64" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
                 </MenuItem>
 
-                    
+                <MenuItem Header="font style" FontSize="25" Background="#FF252525"  Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Header="italic" FontSize="25" FontStyle="Italic" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="setStyleItalic"></MenuItem>
+                    <MenuItem Header="oblique" FontSize="25" FontStyle="Oblique" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="setStyleOblique"></MenuItem>
+                    <MenuItem Header="normal" FontSize="25" FontStyle="Normal" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="setStyleNormal"></MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Font Weight" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Header="bold" FontSize="25" FontWeight="Bold" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="setBold"></MenuItem>
+                    <MenuItem Header="medium" FontSize="25" FontWeight="Medium" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="setMedium"></MenuItem>
+                    <MenuItem Header="extra bold" FontSize="25" FontWeight="ExtraBold" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="setExtraBold"></MenuItem>
+                    <MenuItem Header="ultra bold" FontSize="25" FontWeight="UltraBold" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="setUltraBold"></MenuItem>
+                </MenuItem>
+
             </MenuItem>
 
             <MenuItem Header="Colors" FontSize="25" Background="#FF252525" Foreground="#ffff" Padding="5">

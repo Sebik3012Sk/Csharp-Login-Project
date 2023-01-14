@@ -46,3 +46,17 @@ C:\Users\matej\Desktop\C# together project\Csharp-together-project-2.0\Csharp-Lo
 C:\Users\matej\Desktop\C# together project\Csharp-together-project-2.0\Csharp-Login-Project\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\Csharp-together-project-2.0v.pdb
 C:\Users\matej\Desktop\C# together project\Csharp-together-project-2.0\Csharp-Login-Project\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\Csharp-together-project-2.0v.genruntimeconfig.cache
 C:\Users\matej\Desktop\C# together project\Csharp-together-project-2.0\Csharp-Login-Project\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\ref\Csharp-together-project-2.0v.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\Haley.Abstractions.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\Haley.Extensions.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\Haley.Helpers.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\Haley.IOC.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\Haley.MVVM.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\Haley.WPF.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\protobuf-net.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\protobuf-net.Core.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\Csharp-together-project-2.0v.csproj.ResolveComReference.cache
+C:\Users\sebik\Desktop\Csharp-tegether-project-2.0\Github Project Login\Csharp-together-project-2.0v\Csharp-together-project-2.0v\obj\Debug\net6.0-windows\Csharp-together-project-2.0v.csproj.CopyComplete

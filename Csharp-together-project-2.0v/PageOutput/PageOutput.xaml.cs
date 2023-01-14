@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Haley.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -14,7 +16,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 
-
 namespace Csharp_together_project_2._0v
 {
     /// <summary>
@@ -22,11 +23,19 @@ namespace Csharp_together_project_2._0v
     /// </summary>
     public partial class PageOutput : Page
     {
+
+        FileSystem file_system;
+
         public PageOutput()
         {
             InitializeComponent();
+            Init();
         }
 
+        public void Init()
+        {
+            file_system = new FileSystem(text_editor);
+        }
 
         // setter font-family
 
@@ -40,12 +49,6 @@ namespace Csharp_together_project_2._0v
         {
             Fonts fonts = new Fonts(text_editor);
             fonts.setArial();
-        }
-
-        private void openFile(object sender, RoutedEventArgs e)
-        {
-            FileSystem file_system = new FileSystem(text_editor);
-            file_system.ShowDialog();
         }
 
         private void setterTimesNewRoman(object sender , RoutedEventArgs e)
@@ -144,5 +147,76 @@ namespace Csharp_together_project_2._0v
             TextDecoration text_decorations = new TextDecoration(text_editor);
             text_decorations.textOverLine();
         }
+
+        //File system
+
+        private void SaveFile(object sender, RoutedEventArgs e)
+        {
+            file_system.Save();
+        }
+
+        private void OpenFile(object sender, RoutedEventArgs e)
+        {
+            file_system.ShowDialog();
+        }
+
+        private void SaveAsFile(object sender, RoutedEventArgs e)
+        {
+            file_system.SaveAs();
+        }
+
+        private void newFile(object sender , RoutedEventArgs e)
+        {
+            FileSystem file_system = new FileSystem(text_editor);
+            file_system.newFile();
+        }
+
+
+        // set font styles
+
+        private void setStyleItalic(object sender , RoutedEventArgs e)
+        {
+            FontStyle font_style = new FontStyle(text_editor);
+            font_style.styleItalic();
+        }
+
+        public void setStyleOblique(object sender , RoutedEventArgs e)
+        {
+            FontStyle font_style = new FontStyle(text_editor);
+            font_style.styleOblique();
+        }
+
+        public void setStyleNormal(object sender , RoutedEventArgs e)
+        {
+            FontStyle font_style = new FontStyle(text_editor);
+            font_style.styleNormal();
+        }
+
+        // set font weight
+
+        private void setBold(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setBold();
+        }
+
+        private void setMedium(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setMedium();
+        }
+
+        private void setExtraBold(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setExtraBold();
+        }
+
+        private void setUltraBold(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setUltraBold();
+        }
+
     }
 }
