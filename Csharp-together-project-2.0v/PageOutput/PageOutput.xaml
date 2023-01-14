@@ -36,20 +36,32 @@
                     </MenuItem>
 
                 <MenuItem Header="font size" FontSize="25" Background="#FF252525"  Foreground="#ffff" >
-                    <MenuItem Header="8" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
-                    <MenuItem Header="16" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
-                    <MenuItem Header="24" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
-                    <MenuItem Header="32" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
-                    <MenuItem Header="48" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
-                    <MenuItem Header="64" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Click="settterSizeEight" Header="8" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Click="settterSizeSixTeen" Header="16" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Click="settterSizeTwentyFour" Header="24" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Click="settterSizeThirtyTwo" Header="32" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Click="setterSizeFourtyEight" Header="48" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Click="setterSizeSixtyFour" Header="64" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
                 </MenuItem>
+
                     
+            </MenuItem>
+
+            <MenuItem Header="Colors" FontSize="25" Background="#FF252525" Foreground="#ffff">
+                <MenuItem Header="Background" Background="#FF252525" Foreground="#ffff" FontSize="25">
+                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25"></MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Foreground" Background="#FF252525" Foreground="#ffff" FontSize="25">
+                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25"></MenuItem>
+                </MenuItem>
+
             </MenuItem>
 
             <MenuItem Header="info" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
             <MenuItem Header="about" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
         </Menu>
 
-        <TextBox x:Name="text_editor" Style="{DynamicResource textbox_around}" Grid.Row="1" Margin="20" Padding="20" BorderBrush="Red" BorderThickness="2.7"></TextBox>
+        <TextBox x:Name="text_editor" FontSize="16" Style="{DynamicResource textbox_around}" Grid.Row="1" Margin="20" Padding="20" BorderBrush="Red" BorderThickness="2.7" TextWrapping="Wrap"></TextBox>
     </Grid>
 </Page>
