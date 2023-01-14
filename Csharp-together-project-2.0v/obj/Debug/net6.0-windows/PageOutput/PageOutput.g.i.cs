@@ -61,7 +61,7 @@ namespace Csharp_together_project_2._0v {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Csharp-together-project-2.0v;component/pageoutput/pageoutput.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Csharp-together-project-2.0v;V1.0.0.0;component/pageoutput/pageoutput.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\PageOutput\PageOutput.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
