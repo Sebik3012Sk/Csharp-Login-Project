@@ -6,6 +6,7 @@ using System.IO.Packaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Csharp_together_project_2._0v
@@ -49,9 +50,16 @@ namespace Csharp_together_project_2._0v
 
         public void SaveFile()
         {
-            StreamWriter writer = new StreamWriter(selectedFile);
-            writer.WriteLine(main_text_editor.Text);
-            writer.Close();
+            try
+            {
+                StreamWriter writer = new StreamWriter(selectedFile);
+                writer.Write(main_text_editor.Text);
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Něco se pokazilo :(");
+            }
         }
     }
 }

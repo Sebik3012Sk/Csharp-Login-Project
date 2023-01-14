@@ -21,11 +21,19 @@ namespace Csharp_together_project_2._0v
     /// </summary>
     public partial class PageOutput : Page
     {
+
+        FileSystem file_system;
+
         public PageOutput()
         {
             InitializeComponent();
+            Init();
         }
 
+        public void Init()
+        {
+            file_system = new FileSystem(text_editor);
+        }
 
         // setter font-family
 
@@ -45,7 +53,6 @@ namespace Csharp_together_project_2._0v
 
         private void openFile(object sender, RoutedEventArgs e)
         {
-            FileSystem file_system = new FileSystem(text_editor);
             file_system.ShowDialog();
         }
 
@@ -136,10 +143,21 @@ namespace Csharp_together_project_2._0v
 
         //Save file
 
-        private void saveFile(object sender , RoutedEventArgs e)
+        private void saveFile(object sender, RoutedEventArgs e)
         {
-            FileSystem fileSystem = new FileSystem(text_editor);
-            fileSystem.SaveFile();
+            file_system.SaveFile();
+        }
+
+        private void textBaseline(object sender , RoutedEventArgs e)
+        {
+            TextDecoration text_decorations = new TextDecoration(text_editor);
+            text_decorations.textBaseline();
+        }
+        
+        private void textOverLine(object sender , RoutedEventArgs e)
+        {
+            TextDecoration text_decorations = new TextDecoration(text_editor);
+            text_decorations.textOverLine();
         }
     }
 }
