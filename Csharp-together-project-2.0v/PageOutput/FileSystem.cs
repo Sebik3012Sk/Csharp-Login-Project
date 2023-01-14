@@ -36,7 +36,7 @@ namespace Csharp_together_project_2._0v
             }
 
         }
-        
+
         public void ReadFile(string path)
         {
             StreamReader reader = new StreamReader(path);

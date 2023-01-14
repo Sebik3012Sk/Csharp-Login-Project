@@ -40,12 +40,13 @@ namespace Csharp_together_project_2._0v
             fonts.setArial();
         }
 
-<<<<<<< HEAD
-        private void openFile(object sender , RoutedEventArgs e)
+
+        private void openFile(object sender, RoutedEventArgs e)
         {
             FileSystem file_system = new FileSystem(text_editor);
             file_system.ShowDialog();
-=======
+        }
+
         private void setterTimesNewRoman(object sender , RoutedEventArgs e)
         {
             Fonts fonts = new Fonts(text_editor);
@@ -63,7 +64,6 @@ namespace Csharp_together_project_2._0v
         {
             Fonts fonts = new Fonts(text_editor);
             fonts.setCalibri();
->>>>>>> 0346df28351433a639a43079861ac25e77ca5e2f
         }
     }
 }
