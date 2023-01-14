@@ -26,14 +26,24 @@
             <MenuItem Header="edit" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
 
                 <MenuItem Header="fonts" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
-                <MenuItem Header="fonts family" FontSize="25" Foreground="#ffff" Padding="5" Background="#FF252525">
-                    <MenuItem Header="Helvetica" FontSize="25" FontFamily="Helvetica" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterHelvetica"/>
-                    <MenuItem Header="Arial" FontSize="25" FontFamily="Arial" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterArial"/>
-                    <MenuItem Header="Times New Roman" FontSize="25" FontFamily="Times New Roman" Foreground="#fff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"/>
-                    <MenuItem Header="Comic Sans MS" FontSize="25" FontFamily="Comic Sans MS" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"/>
-                    <MenuItem Header="Calibri" FontSize="25" FontFamily="Calibri" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"/>
+                    
+                    <MenuItem Header="fonts family" FontSize="25" Foreground="#ffff" Padding="5" Background="#FF252525">
+                        <MenuItem Header="Helvetica" FontSize="25" FontFamily="Helvetica" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterHelvetica"/>
+                        <MenuItem Header="Arial" FontSize="25" FontFamily="Arial" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterArial"/>
+                        <MenuItem Header="Times New Roman" FontSize="25" FontFamily="Times New Roman" Foreground="#fff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterTimesNewRoman"/>
+                        <MenuItem Header="Comic Sans MS" FontSize="25" FontFamily="Comic Sans MS" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterComicSansMS"/>
+                        <MenuItem Header="Calibri" FontSize="25" FontFamily="Calibri" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterCalibri"/>
+                    </MenuItem>
+
+                <MenuItem Header="font size" FontSize="25" Background="#FF252525"  Foreground="#ffff" >
+                    <MenuItem Header="8" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Header="16" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Header="24" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Header="32" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Header="48" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Header="64" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
                 </MenuItem>
-               
+                    
             </MenuItem>
 
             <MenuItem Header="info" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>

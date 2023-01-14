@@ -38,5 +38,24 @@ namespace Csharp_together_project_2._0v
             Fonts fonts = new Fonts(text_editor);
             fonts.setArial();
         }
+
+        private void setterTimesNewRoman(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setTimesNewRoman();
+        }
+
+
+        private void setterComicSansMS(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setComicSansMS();
+        }
+
+        private void setterCalibri(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setCalibri();
+        }
     }
 }
