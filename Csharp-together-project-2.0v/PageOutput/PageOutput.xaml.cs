@@ -41,6 +41,7 @@ namespace Csharp_together_project_2._0v
             fonts.setArial();
         }
 
+        //Open file
 
         private void openFile(object sender, RoutedEventArgs e)
         {
@@ -105,5 +106,40 @@ namespace Csharp_together_project_2._0v
             fonts.set_sixty_four();
         }
 
+        // move text - text positions : right , left , center
+
+        private void moveRight(object sender , RoutedEventArgs e)
+        {
+            MoveText move_text = new MoveText(text_editor);
+            move_text.moveRight();
+        }
+
+        private void moveLeft(object sender , RoutedEventArgs e)
+        {
+            MoveText move_text = new MoveText(text_editor);
+            move_text.moveLeft();
+        }
+
+        private void moveCenter(object sender , RoutedEventArgs e)
+        {
+            MoveText move_text = new MoveText(text_editor);
+            move_text.moveCenter();
+        }
+
+        // text decoration : underline
+
+        private void textUnderline(object sender , RoutedEventArgs e)
+        {
+            TextDecoration text_decorations = new TextDecoration(text_editor);
+            text_decorations.textUnderline();
+        }
+
+        //Save file
+
+        private void saveFile(object sender , RoutedEventArgs e)
+        {
+            FileSystem fileSystem = new FileSystem(text_editor);
+            fileSystem.SaveFile();
+        }
     }
 }

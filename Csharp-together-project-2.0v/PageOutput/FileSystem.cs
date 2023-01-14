@@ -15,6 +15,8 @@ namespace Csharp_together_project_2._0v
 
         TextBox main_text_editor;
 
+        String selectedFile;
+
         public FileSystem(TextBox main_text_editor)
         {
             this.main_text_editor = main_text_editor;
@@ -31,17 +33,25 @@ namespace Csharp_together_project_2._0v
 
             if (FileDialog.ShowDialog() == true)
             {
-                string selectedFile = FileDialog.FileName;
-                ReadFile(selectedFile);
+                selectedFile = FileDialog.FileName;
+                ReadFile();
             }
 
         }
 
-        public void ReadFile(string path)
+        public void ReadFile()
         {
-            StreamReader reader = new StreamReader(path);
+            StreamReader reader = new StreamReader(selectedFile);
             string file_content = reader.ReadToEnd();
             main_text_editor.Text = file_content;
+            reader.Close();
+        }
+
+        public void SaveFile()
+        {
+            StreamWriter writer = new StreamWriter(selectedFile);
+            writer.WriteLine(main_text_editor.Text);
+            writer.Close();
         }
     }
 }
