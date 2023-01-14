@@ -24,6 +24,8 @@ namespace Csharp_together_project_2._0v
             this.main_text_editor = main_text_editor;
         }
 
+        // set font family
+
         public void setHelvetica()
         {
             main_text_editor.FontFamily = new FontFamily("Helvetica");
@@ -48,6 +50,38 @@ namespace Csharp_together_project_2._0v
         public void setCalibri()
         {
             main_text_editor.FontFamily = new FontFamily("Calibri");
+        }
+
+        // set font size
+
+        public void set_eight()
+        {
+            main_text_editor.FontSize = 8;
+        }
+
+        public void set_sixteen()
+        {
+            main_text_editor.FontSize = 16;
+        }
+
+        public void set_twenty_four()
+        {
+            main_text_editor.FontSize = 24;
+        }
+
+        public void set_thirty_two()
+        {
+            main_text_editor.FontSize = 32;
+        }
+
+        public void set_fourty_eight()
+        {
+            main_text_editor.FontSize = 48;
+        }
+
+        public void set_sixty_four()
+        {
+            main_text_editor.FontSize = 64;
         }
     }
 }
