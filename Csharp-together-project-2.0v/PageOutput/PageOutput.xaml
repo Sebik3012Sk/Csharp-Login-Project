@@ -6,28 +6,40 @@
       xmlns:local="clr-namespace:Csharp_together_project_2._0v"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageOutput">
+      Title="Login Form App">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Menu Grid.Column="0" Grid.Row="0">
-            <MenuItem Header="file" FontSize="25" Cursor="Hand">
-                <MenuItem Header="Save">
-                    <MenuItem.Icon>
-                        <Image Source="img/save-icon.png" />
-                    </MenuItem.Icon>
-                </MenuItem>
-                
-                <MenuItem Header="Open"></MenuItem>
-                
-                <MenuItem Header="Save as"></MenuItem>
+
+
+        <Menu Grid.Column="0" Grid.Row="0" Background="#FF252525" Margin="5">
+            <MenuItem Header="file" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
+                <MenuItem Header="Save" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                <MenuItem Header="Open" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                <MenuItem Header="Save as" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
             </MenuItem>
-            <MenuItem Header="edit" FontSize="25" Cursor="Hand"></MenuItem>
             
-            <MenuItem Header="info" FontSize="25" Cursor="Hand"></MenuItem>
+            
+            <MenuItem Header="edit" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
+
+                <MenuItem Header="fonts" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
+                <MenuItem Header="fonts family" FontSize="25" Foreground="#ffff" Padding="5" Background="#FF252525">
+                    <MenuItem Header="Helvetica" FontSize="25" FontFamily="Helvetica" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterHelvetica"/>
+                    <MenuItem Header="Arial" FontSize="25" FontFamily="Arial" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterArial"/>
+                    <MenuItem Header="Times New Roman" FontSize="25" FontFamily="Times New Roman" Foreground="#fff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"/>
+                    <MenuItem Header="Comic Sans MS" FontSize="25" FontFamily="Comic Sans MS" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"/>
+                    <MenuItem Header="Calibri" FontSize="25" FontFamily="Calibri" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12"/>
+                </MenuItem>
+               
+            </MenuItem>
+
+            <MenuItem Header="info" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
+            <MenuItem Header="about" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
         </Menu>
+
+        <TextBox x:Name="text_editor" Style="{DynamicResource textbox_around}" Grid.Row="1" Margin="20" Padding="20" BorderBrush="Red" BorderThickness="2.7"></TextBox>
     </Grid>
 </Page>

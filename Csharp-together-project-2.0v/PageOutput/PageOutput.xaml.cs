@@ -24,5 +24,19 @@ namespace Csharp_together_project_2._0v
         {
             InitializeComponent();
         }
+
+        
+
+        private void setterHelvetica(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setHelvetica();
+        }
+
+        private void setterArial(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setArial();
+        }
     }
 }
