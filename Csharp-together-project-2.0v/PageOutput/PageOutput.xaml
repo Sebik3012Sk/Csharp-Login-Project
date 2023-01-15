@@ -48,7 +48,9 @@
                         <MenuItem Header="Times New Roman" FontSize="25" FontFamily="Times New Roman" Foreground="#fff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterTimesNewRoman"/>
                         <MenuItem Header="Comic Sans MS" FontSize="25" FontFamily="Comic Sans MS" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterComicSansMS"/>
                         <MenuItem Header="Calibri" FontSize="25" FontFamily="Calibri" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterCalibri"/>
-                    </MenuItem>
+                        <MenuItem Header="Arabic Transparent" FontSize="25" FontFamily="Arabic Transparent" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterArabicTransparent"/>
+                        <MenuItem Header="Georgia" FontSize="25" FontFamily="Georgia" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="setterGeorgia"/>
+                </MenuItem>
 
                 <MenuItem Header="font size" FontSize="25" Background="#FF252525"  Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
                     <MenuItem Click="settterSizeEight" Header="8" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>

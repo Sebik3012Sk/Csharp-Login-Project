@@ -26,6 +26,9 @@ namespace Csharp_together_project_2._0v
 
         // set font family
 
+
+
+
         public void setHelvetica()
         {
             main_text_editor.FontFamily = new FontFamily("Helvetica");
@@ -50,6 +53,16 @@ namespace Csharp_together_project_2._0v
         public void setCalibri()
         {
             main_text_editor.FontFamily = new FontFamily("Calibri");
+        }
+
+        public void setArabicTransparent()
+        {
+            main_text_editor.FontFamily = new FontFamily("Arabic Transparent");
+        }
+
+        public void setGeorgia()
+        {
+            main_text_editor.FontFamily = new FontFamily("Georgia");
         }
 
         // set font size

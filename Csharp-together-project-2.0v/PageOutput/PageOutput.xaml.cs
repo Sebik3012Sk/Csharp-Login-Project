@@ -70,6 +70,18 @@ namespace Csharp_together_project_2._0v
             fonts.setCalibri();
         }
 
+        private void setterArabicTransparent(object sender, RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setArabicTransparent();
+        }
+
+        private void setterGeorgia(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setGeorgia();
+        }
+
         // setter size
 
         private void settterSizeEight(object sender,  RoutedEventArgs e)
@@ -217,6 +229,9 @@ namespace Csharp_together_project_2._0v
             BoldText bold_text = new BoldText(text_editor);
             bold_text.setUltraBold();
         }
+
+
+
 
     }
 }
