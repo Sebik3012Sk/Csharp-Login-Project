@@ -44,6 +44,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Haley.WPF": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +65,7 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WPF": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
             }
           },

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Haley.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -161,6 +163,73 @@ namespace Csharp_together_project_2._0v
         private void SaveAsFile(object sender, RoutedEventArgs e)
         {
             file_system.SaveAs();
+        }
+
+        private void newFile(object sender , RoutedEventArgs e)
+        {
+            FileSystem file_system = new FileSystem(text_editor);
+            file_system.newFile();
+        }
+
+
+        // set font styles
+
+        private void setStyleItalic(object sender , RoutedEventArgs e)
+        {
+            FontStyle font_style = new FontStyle(text_editor);
+            font_style.styleItalic();
+        }
+
+        public void setStyleOblique(object sender , RoutedEventArgs e)
+        {
+            FontStyle font_style = new FontStyle(text_editor);
+            font_style.styleOblique();
+        }
+
+        public void setStyleNormal(object sender , RoutedEventArgs e)
+        {
+            FontStyle font_style = new FontStyle(text_editor);
+            font_style.styleNormal();
+        }
+
+        // set font weight
+
+        private void setBold(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setBold();
+        }
+
+        private void setMedium(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setMedium();
+        }
+
+        private void setExtraBold(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setExtraBold();
+        }
+
+        private void setUltraBold(object sender , RoutedEventArgs e)
+        {
+            BoldText bold_text = new BoldText(text_editor);
+            bold_text.setUltraBold();
+        }
+
+        //Color choosing
+
+        private void ChooseColorBg(object sender, RoutedEventArgs e)
+        {
+            Colors colors = new Colors(text_editor);
+            colors.setBackground();
+        }
+
+        private void ChooseColorFg(object sender, RoutedEventArgs e)
+        {
+            Colors colors = new Colors(text_editor);
+            colors.setForeground();
         }
     }
 }
