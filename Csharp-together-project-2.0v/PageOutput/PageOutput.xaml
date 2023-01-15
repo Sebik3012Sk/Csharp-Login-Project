@@ -22,8 +22,7 @@
                 <MenuItem Header="Save as" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveAsFile"></MenuItem>
                 <MenuItem Header="New File" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="newFile"></MenuItem>
             </MenuItem>
-            
-            
+
             <MenuItem Header="edit" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
 
                 <MenuItem Header="Text Positon" FontSize="25" Background="#FF252525" Foreground="#fff" BorderBrush="#FF252525" BorderThickness="12">
@@ -78,11 +77,11 @@
 
             <MenuItem Header="Colors" FontSize="25" Background="#FF252525" Foreground="#ffff" Padding="5">
                 <MenuItem Header="Background" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12">
-                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12" Click="ChooseColorBg"></MenuItem>
                 </MenuItem>
 
                 <MenuItem Header="Foreground" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12">
-                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12"></MenuItem>
+                    <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12" Click="ChooseColorFg"></MenuItem>
                 </MenuItem>
 
             </MenuItem>

@@ -230,8 +230,24 @@ namespace Csharp_together_project_2._0v
             bold_text.setUltraBold();
         }
 
+<<<<<<< HEAD
 
 
 
+=======
+        //Color choosing
+
+        private void ChooseColorBg(object sender, RoutedEventArgs e)
+        {
+            Colors colors = new Colors(text_editor);
+            colors.setBackground();
+        }
+
+        private void ChooseColorFg(object sender, RoutedEventArgs e)
+        {
+            Colors colors = new Colors(text_editor);
+            colors.setForeground();
+        }
+>>>>>>> 72d87968907ea8351d1ff5d59198959b4caf9c49
     }
 }

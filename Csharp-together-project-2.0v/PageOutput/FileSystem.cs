@@ -16,7 +16,7 @@ namespace Csharp_together_project_2._0v
 
         TextBox main_text_editor;
 
-        String selectedFile;
+        string selectedFile;
 
         public FileSystem(TextBox main_text_editor)
         {

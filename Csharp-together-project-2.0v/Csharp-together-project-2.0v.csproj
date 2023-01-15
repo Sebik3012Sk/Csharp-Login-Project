@@ -6,6 +6,7 @@
     <RootNamespace>Csharp_together_project_2._0v</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
