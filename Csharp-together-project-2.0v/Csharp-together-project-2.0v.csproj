@@ -10,8 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\background-icon.png" />
+    <None Remove="img\foreground-icon.png" />
     <None Remove="img\icon.ico" />
+    <None Remove="img\load-image.png" />
+    <None Remove="img\new-file-icon.png" />
+    <None Remove="img\open-icon.png" />
+    <None Remove="img\save-as-icon.png" />
     <None Remove="img\save-icon.png" />
+    <None Remove="img\text-decorations\text-underline.png" />
+    <None Remove="img\text-positions\text-pos-center.png" />
+    <None Remove="img\text-positions\text-pos-left.png" />
+    <None Remove="img\text-positions\text-pos-right.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,12 +34,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="img\background-icon.png" />
+    <Resource Include="img\foreground-icon.png" />
+    <Resource Include="img\load-image.png" />
+    <Resource Include="img\new-file-icon.png" />
+    <Resource Include="img\open-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Haley.WPF" Version="5.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="img\icon.ico" />
+    <Resource Include="img\save-as-icon.png" />
     <Resource Include="img\save-icon.png" />
+    <Resource Include="img\text-decorations\text-underline.png" />
+    <Resource Include="img\text-positions\text-pos-center.png" />
+    <Resource Include="img\text-positions\text-pos-left.png" />
+    <Resource Include="img\text-positions\text-pos-right.png" />
   </ItemGroup>
 
 </Project>

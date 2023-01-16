@@ -17,22 +17,73 @@
 
         <Menu Grid.Column="0" Grid.Row="0" Background="#FF252525" Margin="5">
             <MenuItem Header="file" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
-                <MenuItem Header="Save" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveFile"></MenuItem>
-                <MenuItem Header="Open" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="OpenFile"></MenuItem>
-                <MenuItem Header="Save as" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveAsFile"></MenuItem>
-                <MenuItem Header="New File" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="newFile"></MenuItem>
+                
+                <MenuItem Header="{Binding save}" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveFile">
+                    <MenuItem.Icon>
+                        <Image Source="../img/save-icon.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                
+                <MenuItem Header="{Binding open}" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="OpenFile">
+                    <MenuItem.Icon>
+                        <Image Source="../img/open-icon.png" />
+                    </MenuItem.Icon>    
+                </MenuItem>
+                
+                <MenuItem Header="{Binding save_as}" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="SaveAsFile">
+                    <MenuItem.Icon>
+                        <Image Source="../img/save-as-icon.png" />
+                    </MenuItem.Icon>    
+                </MenuItem>
+                
+                <MenuItem Header="{Binding new_file}" Foreground="#ffff" Background="#FF252525" BorderBrush="#FF252525" BorderThickness="12" Click="newFile">
+                    <MenuItem.Icon>
+                        <Image Source="../img/new-file-icon.png" />
+                    </MenuItem.Icon>    
+                </MenuItem>
+                
             </MenuItem>
 
             <MenuItem Header="edit" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5">
 
                 <MenuItem Header="Text Positon" FontSize="25" Background="#FF252525" Foreground="#fff" BorderBrush="#FF252525" BorderThickness="12">
-                    <MenuItem Header="left" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveLeft"/>
-                    <MenuItem Header="right" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveRight"/>
-                    <MenuItem Header="center" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveCenter"/>
+
+                    <MenuItem Header="left" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveLeft">
+                        <MenuItem.Icon>
+                            <Image Source="../img/text-positions/text-pos-left.png" />
+                        </MenuItem.Icon>
+                        <MenuItem Header="right" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveRight">
+                        <MenuItem.Icon>
+                            <Image Source="../img/text-positions/text-pos-right.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    
+                    </MenuItem>
+
+                    <MenuItem Header="center" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="moveCenter">
+                        <MenuItem.Icon>
+                            <Image Source="../img/text-positions/text-pos-center.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    
+                </MenuItem>
+
+                <MenuItem Header="Load image" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Header="Load from this computer" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
+                        <MenuItem.Icon>
+                            <Image Source="../img/load-image.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
 
                 <MenuItem Header="Text Decoration" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
-                    <MenuItem Header="underline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textUnderline"/>
+                    
+                    <MenuItem Header="underline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textUnderline">
+                        <MenuItem.Icon>
+                            <Image Source="../img/text-decorations/text-underline.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    
                     <MenuItem Header="baseline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textBaseline"/>
                     <MenuItem Header="overline" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12" Click="textOverLine"/>
                 </MenuItem>
@@ -77,10 +128,18 @@
 
             <MenuItem Header="Colors" FontSize="25" Background="#FF252525" Foreground="#ffff" Padding="5">
                 <MenuItem Header="Background" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem.Icon>
+                        <Image Source="../img/background-icon.png" />
+                    </MenuItem.Icon>
+                    
                     <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12" Click="ChooseColorBg"></MenuItem>
                 </MenuItem>
 
                 <MenuItem Header="Foreground" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem.Icon>
+                        <Image Source="../img/foreground-icon.png" />
+                    </MenuItem.Icon>
+                    
                     <MenuItem Header="Choose Color" Background="#FF252525" Foreground="#ffff" FontSize="25" BorderBrush="#FF252525" BorderThickness="12" Click="ChooseColorFg"></MenuItem>
                 </MenuItem>
 
