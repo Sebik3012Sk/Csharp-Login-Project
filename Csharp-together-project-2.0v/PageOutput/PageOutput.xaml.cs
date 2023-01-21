@@ -9,6 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms.VisualStyles;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -26,12 +27,21 @@ namespace Csharp_together_project_2._0v
 
         FileSystem file_system;
 
+<<<<<<< HEAD
         string text = "error";
+=======
+        // file menu - menuitem - properties 
+        public string save { get; set; } = "save";
+        public string open { get; set; } = "open";
+        public string save_as { get; set; } = "save as";
+        public string new_file { get; set; } = "New File";
+>>>>>>> b0e176e790539799e65fe42d917b4d6aced3e5b3
 
         public PageOutput()
         {
             InitializeComponent();
             Init();
+            DataContext = this;
         }
 
         public void Init()
@@ -232,6 +242,12 @@ namespace Csharp_together_project_2._0v
             bold_text.setUltraBold();
         }
 
+<<<<<<< HEAD
+=======
+
+        //Color choosing
+
+>>>>>>> b0e176e790539799e65fe42d917b4d6aced3e5b3
         private void ChooseColorBg(object sender, RoutedEventArgs e)
         {
             Colors colors = new Colors(text_editor);
@@ -243,5 +259,9 @@ namespace Csharp_together_project_2._0v
             Colors colors = new Colors(text_editor);
             colors.setForeground();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b0e176e790539799e65fe42d917b4d6aced3e5b3
     }
 }
