@@ -192,6 +192,12 @@ namespace Csharp_together_project_2._0v
             file_system.newFile();
         }
 
+        private void loadThisImage(object sender, RoutedEventArgs e)
+        {
+            LoadImage load = new LoadImage(text_editor, image_bg) ;
+            load.ShowDialog();
+        }
+
 
         // set font styles
 
@@ -250,5 +256,6 @@ namespace Csharp_together_project_2._0v
             Colors colors = new Colors(text_editor);
             colors.setForeground();
         }
+
     }
 }

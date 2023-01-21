@@ -31,7 +31,7 @@
         
         <TextBlock Grid.Column="1" Grid.Row="0" Text="Login Form App" FontSize="28" Foreground="Red" TextAlignment="Center" Margin="87,29,87,28"></TextBlock>
         <TextBox x:Name="input_username" Style="{DynamicResource textbox_username_round}" Grid.Column="1" Grid.Row="1" BorderBrush="Red" BorderThickness="2" Margin="15,15,15,25" Padding="25.4" Background="#FF252525" Foreground="Red" FontSize="17.4" FontStyle="italic" FontFamily="Helvetica"></TextBox>
-        <PasswordBox x:Name="input_password" Style="{DynamicResource passwordbox_round}" Grid.Column="1" Grid.Row="2" BorderBrush="Red" BorderThickness="2" Margin="15" Padding="24.8" Background="#FF252525" Foreground="Red" FontSize="17.4" FontStyle="Italic" FontFamily="Helvetica"></PasswordBox>
+        <PasswordBox x:Name="input_password" Style="{DynamicResource passwordbox_round}" Grid.Column="1" Grid.Row="2" BorderBrush="Red" BorderThickness="2" Margin="15" Padding="24.8" Background="#FF252525" Foreground="Red" FontSize="17.4" FontStyle="Italic" FontFamily="Helvetica" KeyDown="pressEnterGoApp"></PasswordBox>
         <Button Style="{DynamicResource button_LogIn}" Grid.Column="1" Grid.Row="3" Content="Log In" FontSize="25" Margin="127,13,170,25" Foreground="White" FontFamily="Helvetica" Click="SubmitData">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

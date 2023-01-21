@@ -20,6 +20,8 @@ namespace Csharp_together_project_2._0v
     /// </summary>
     public partial class MainWindow : Window
     {
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,6 +32,8 @@ namespace Csharp_together_project_2._0v
             {"Sebastian Kučera" , "Mmac" },
             { "1234" , "4321" }
         };
+
+        
 
         private void SubmitData(object sender , RoutedEventArgs e)
         {
@@ -50,6 +54,20 @@ namespace Csharp_together_project_2._0v
                 MessageBox.Show("Your data is not valid", "Login Form App");
         }
 
-       
+        private void pressEnterGoApp(object sender , KeyEventArgs e)
+        {
+
+            if (e.Key == Key.Enter)
+            {
+                PageOutput page_out = new PageOutput();
+                this.Content = page_out;
+            }
+
+        
+        }
+
+
     }
 }
+
+

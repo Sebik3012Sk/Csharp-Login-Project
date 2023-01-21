@@ -69,7 +69,7 @@
                 </MenuItem>
 
                 <MenuItem Header="Load image" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
-                    <MenuItem Header="Load from this computer" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
+                    <MenuItem Click="loadThisImage" Header="Load from this computer" FontSize="25" Background="#FF252525" Foreground="#ffff" BorderBrush="#FF252525" BorderThickness="12">
                         <MenuItem.Icon>
                             <Image Source="../img/load-image.png" />
                         </MenuItem.Icon>
@@ -150,7 +150,9 @@
         </Menu>
 
         <TextBox x:Name="text_editor" FontSize="16" Style="{DynamicResource textbox_around}" Grid.Row="1" Margin="20" Padding="20" BorderBrush="Red" BorderThickness="2.7" TextWrapping="Wrap">
-            
+            <TextBox.Background>
+                <ImageBrush x:Name="image_bg" AlignmentX="Left" Stretch="None"></ImageBrush>
+            </TextBox.Background>
         </TextBox>
     </Grid>
 </Page>
