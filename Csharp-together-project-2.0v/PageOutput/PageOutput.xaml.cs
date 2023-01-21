@@ -26,6 +26,8 @@ namespace Csharp_together_project_2._0v
 
         FileSystem file_system;
 
+        string text = "error";
+
         public PageOutput()
         {
             InitializeComponent();
@@ -68,6 +70,18 @@ namespace Csharp_together_project_2._0v
         {
             Fonts fonts = new Fonts(text_editor);
             fonts.setCalibri();
+        }
+
+        private void setterArabicTransparent(object sender, RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setArabicTransparent();
+        }
+
+        private void setterGeorgia(object sender , RoutedEventArgs e)
+        {
+            Fonts fonts = new Fonts(text_editor);
+            fonts.setGeorgia();
         }
 
         // setter size
@@ -212,13 +226,11 @@ namespace Csharp_together_project_2._0v
             bold_text.setExtraBold();
         }
 
-        private void setUltraBold(object sender , RoutedEventArgs e)
+        private void setUltraBold(object sender, RoutedEventArgs e)
         {
             BoldText bold_text = new BoldText(text_editor);
             bold_text.setUltraBold();
         }
-
-        //Color choosing
 
         private void ChooseColorBg(object sender, RoutedEventArgs e)
         {

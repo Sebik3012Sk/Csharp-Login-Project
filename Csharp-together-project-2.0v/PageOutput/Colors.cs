@@ -24,7 +24,7 @@ namespace Csharp_together_project_2._0v
             this.main_text_editor = main_text_editor;
         }
 
-        public void ShowColorDialog()
+        public void ShowColorDialog(string operation)
         {
             ColorDialog colorDialog = new ColorDialog();
             colorDialog.SolidColorOnly = true;
@@ -32,10 +32,22 @@ namespace Csharp_together_project_2._0v
             {
                 selectedColor = colorDialog.Color;
             }
+            else
+            {
+                if (operation == "bg")
+                {
+                    
+                    
+                }
+                else if (operation == "fg")
+                {
+
+                }
+            }
         }
         public void setBackground()
         {
-            this.ShowColorDialog();
+            this.ShowColorDialog("bg");
             byte r = selectedColor.R;
             byte g = selectedColor.G;
             byte b = selectedColor.B;
@@ -45,7 +57,7 @@ namespace Csharp_together_project_2._0v
 
         public void setForeground()
         {
-            this.ShowColorDialog();
+            this.ShowColorDialog("fg");
             byte r = selectedColor.R;
             byte g = selectedColor.G;
             byte b = selectedColor.B;
