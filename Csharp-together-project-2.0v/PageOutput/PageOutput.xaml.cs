@@ -253,5 +253,9 @@ namespace Csharp_together_project_2._0v
             colors.setForeground();
         }
 
+        // create new line past press enter
+        
+        // end function
+
     }
 }
