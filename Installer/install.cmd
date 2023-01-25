@@ -1,0 +1,8 @@
+mkdir "C:\Program Files\TextEditor++"
+move "Csharp-together-project-2.0v.deps.json" "C:\Program Files\TextEditor++"
+move "Csharp-together-project-2.0v.dll" "C:\Program Files\TextEditor++"
+move "Csharp-together-project-2.0v.exe" "C:\Program Files\TextEditor++"
+move "Csharp-together-project-2.0v.pdb" "C:\Program Files\TextEditor++"
+move "Csharp-together-project-2.0v.runtimeconfig.json" "C:\Program Files\TextEditor++"
+move "data_list.txt" "C:\Program Files\TextEditor++"
+move "TextEditor.lnk" "C:\Users\%username%\Desktop"

@@ -27,6 +27,7 @@ namespace Csharp_together_project_2._0v
 
         FileSystem file_system;
 
+        string text = "error";
         // file menu - menuitem - properties 
         public string save { get; set; } = "save";
         public string open { get; set; } = "open";
@@ -191,6 +192,12 @@ namespace Csharp_together_project_2._0v
             file_system.newFile();
         }
 
+        private void loadThisImage(object sender, RoutedEventArgs e)
+        {
+            LoadImage load = new LoadImage(text_editor, image_bg) ;
+            load.ShowDialog();
+        }
+
 
         // set font styles
 
@@ -232,14 +239,11 @@ namespace Csharp_together_project_2._0v
             bold_text.setExtraBold();
         }
 
-        private void setUltraBold(object sender , RoutedEventArgs e)
+        private void setUltraBold(object sender, RoutedEventArgs e)
         {
             BoldText bold_text = new BoldText(text_editor);
             bold_text.setUltraBold();
         }
-
-
-        //Color choosing
 
         private void ChooseColorBg(object sender, RoutedEventArgs e)
         {
@@ -253,7 +257,10 @@ namespace Csharp_together_project_2._0v
             colors.setForeground();
         }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6a5745d52534446d577c55c9fb72f1d8976b0f13
     }
 }

@@ -57,7 +57,7 @@ namespace Csharp_together_project_2._0v
         private void pressEnterGoApp(object sender , KeyEventArgs e)
         {
 
-            if (e.Key == Key.Return)
+            if (e.Key == Key.Enter)
             {
                 PageOutput page_out = new PageOutput();
                 this.Content = page_out;
