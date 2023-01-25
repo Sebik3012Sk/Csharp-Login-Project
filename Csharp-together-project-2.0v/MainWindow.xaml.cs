@@ -63,7 +63,6 @@ namespace Csharp_together_project_2._0v
                 this.Content = page_out;
             }
 
-        
         }
 
 
