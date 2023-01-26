@@ -257,10 +257,5 @@ namespace Csharp_together_project_2._0v
             colors.setForeground();
         }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 6a5745d52534446d577c55c9fb72f1d8976b0f13
     }
 }

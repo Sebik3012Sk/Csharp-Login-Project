@@ -149,14 +149,12 @@
             <MenuItem Header="about" FontSize="25" Cursor="Hand" Foreground="#ffff" Padding="5"></MenuItem>
         </Menu>
 
-<<<<<<< HEAD
-        <TextBox x:Name="text_editor" FontSize="16" Style="{DynamicResource textbox_around}" Grid.Row="1" Margin="20" Padding="20" BorderThickness="2.7" TextWrapping="Wrap"></TextBox>
-=======
+
         <TextBox x:Name="text_editor" FontSize="16" Style="{DynamicResource textbox_around}" Grid.Row="1" Margin="20" Padding="20" BorderBrush="Red" BorderThickness="2.7" TextWrapping="Wrap">
             <TextBox.Background>
                 <ImageBrush x:Name="image_bg" AlignmentX="Left" Stretch="None"></ImageBrush>
             </TextBox.Background>
         </TextBox>
->>>>>>> 6a5745d52534446d577c55c9fb72f1d8976b0f13
+
     </Grid>
 </Page>

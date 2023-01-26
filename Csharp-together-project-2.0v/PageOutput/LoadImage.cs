@@ -13,7 +13,6 @@ namespace Csharp_together_project_2._0v
     internal class LoadImage
     {
         TextBox main_text_editor;
-
         ImageBrush load_image;
 
         string selectedFile;

@@ -1017,23 +1017,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matej\\.nuget\\packages\\": {},
+    "C:\\Users\\sebik\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matej\\Desktop\\C# together project\\Csharp-together-project-2.0\\Csharp-Login-Project\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v.csproj",
+      "projectUniqueName": "C:\\Users\\sebik\\Desktop\\Csharp-tegether-project-2.0\\Github Project Login\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v.csproj",
       "projectName": "Csharp-together-project-2.0v",
-      "projectPath": "C:\\Users\\matej\\Desktop\\C# together project\\Csharp-together-project-2.0\\Csharp-Login-Project\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v.csproj",
-      "packagesPath": "C:\\Users\\matej\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matej\\Desktop\\C# together project\\Csharp-together-project-2.0\\Csharp-Login-Project\\Csharp-together-project-2.0v\\obj\\",
+      "projectPath": "C:\\Users\\sebik\\Desktop\\Csharp-tegether-project-2.0\\Github Project Login\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v.csproj",
+      "packagesPath": "C:\\Users\\sebik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebik\\Desktop\\Csharp-tegether-project-2.0\\Github Project Login\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\matej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1085,7 +1085,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
