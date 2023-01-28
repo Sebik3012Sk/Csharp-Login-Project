@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b+GoomkLo4Qn1+ieW1u/PsxQxtgTEK6PmeW02mCwLcYFuqi9cPTQDJ81fweazyqpsDj86O/ZqWS6Sk/Gd8Uzxw==",
+  "dgSpecHash": "X/fSqANJa1bJ42IfTQj9TfJ3S1Fj0xI6k3rc+qt1CoOk3gX0d10qr1qVvXjieYwS9BQzgTloIA94SEQu6hQArw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebik\\Desktop\\Csharp-tegether-project-2.0\\Github Project Login\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v.csproj",
+  "projectFilePath": "C:\\Users\\sebik\\Desktop\\Csharp-tegether-project-2.0\\Github Project Login\\Csharp-together-project-2.0v\\Csharp-Login-Project\\Csharp-together-project-2.0v\\Csharp-together-project-2.0v.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebik\\.nuget\\packages\\haley.abstractions\\1.0.19\\haley.abstractions.1.0.19.nupkg.sha512",
     "C:\\Users\\sebik\\.nuget\\packages\\haley.extensions\\2.1.15.1\\haley.extensions.2.1.15.1.nupkg.sha512",
